@@ -1,46 +1,699 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Worker & Co" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Amina, Kokoé, Mamed" />
-    <title>Worker & Co</title>
+<html lang="en-US">
 
-    <link rel="shortcut icon" href="./assets/img/logo.png" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      async
-      defer
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  </head>
-  <body>
-    
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-    <h1>Hello, world!</h1>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Optional JavaScript; choose one of the two! -->
+	<title>Worker & Co </title>
+	<!-- Windows 8 Tiles -->
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<!-- ****** faviconit.com favicons ****** -->
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/picto-foundry-emotions.css" />
+	<link rel="stylesheet" href="css/picto-foundry-household.css" />
+	<link rel="stylesheet" href="css/picto-foundry-shopping-finance.css" />
+	<link rel="stylesheet" href="css/picto-foundry-general.css" />
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+</head>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
-  </body>
+<body>
+	<div class="pushWrapper">
+		<!-- Header (shown on mobile only) -->
+		<header class="pageHeader">
+			<!-- Menu Trigger -->
+			<button class="menu-trigger">
+				<span class="lines"></span>
+			</button>
+
+			<!-- Logo -->
+			<a class="headerLogo smoothScroll" href="#">
+				<span><img src="img/logo3.png" alt=""></span>
+				<!-- <span class="text-center">Worker & Co</span> -->
+			</a>
+		</header>
+
+		<!-- Sidebar -->
+		<div class="sidebar">
+
+			<nav class="mainMenu">
+				<ul class="menu">
+					<li>
+						<a class="smoothScroll" href="#timeline-part" title="Qui sommes-nous?"><i
+								class="step icon-question size-24"></i><span class="text">Presentation</span></a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="#stastistical-part" title="Services"><i
+								class="icon-reciept-1 size-24"></i><span class="text">Services</span></a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="#pricing-part" title="Tarification"><i
+								class="step icon-euro size-24"></i><span class="text">Tarification</span></a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="#tips-part" title="Réservation"><i
+								class="step icon-light-bulb size-24"></i><span class="text">Réservation</span></a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="#events-part" title="Eventénement"><i
+								class="step icon-calendar-1 size-24 size"></i><span class="text">Evenement à venir</span></a>
+					</li>
+
+					<li>
+						<a class="smoothScroll" href="#section-team" title="Fondatrices"><i
+								class="step icon-group size-24 size"></i><span class="text">Fondatrices</span></a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="#contact-form" title="Formulaire de contact"><i
+								class="step icon-envelope-1 size-34"></i><span class="text">Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+
+			<nav class="backToTop">
+				<ul class="backToTop-menu">
+					<li><a class="smoothScroll" href="#section-intro" title="Haut de page"><i class="fa fa-chevron-up"></i><span
+								class="text">Haut de page</span></a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<main>
+
+
+			<section class="section-intro" id="section-intro" data-stellar-background-ratio="0.5"
+				data-stellar-vertical-offset="0">
+
+				<div class="content">
+					<div class="container-template">
+						<img src="img/logo3.png" alt="">
+						<!-- <h1>
+							<span>Worker & Co</span>
+						</h1> -->
+					</div>
+				</div>
+
+			</section>
+			<section class="timeline-part" id="timeline-part">
+
+				<div class="content">
+					<div class="container-template">
+
+						<div class="headergroup">
+							<h2 class="in-point">
+								<span class="seconday">Qui sommes-nous ?</span>
+								<span>Worker & Co?</span>
+							</h2>
+						</div>
+
+						<div class="intro content-template">
+							<p><strong>Titre</strong></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni beatae autem harum expedita, natus
+								corrupti aliquam impedit. At mollitia perspiciatis temporibus est ipsum animi provident tenetur
+								laudantium, ducimus et? Eveniet.</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat beatae error corrupti dolores harum
+								odit suscipit nihil, quam maxime odio repellat deleniti inventore repellendus ea! Tempora recusandae
+								obcaecati fugit sed.</p>
+						</div>
+
+						<ul class="timeline">
+							<li class="year">2012</li>
+							<li class="upper-line">
+								<span class="title">Creation</span>
+								<span class="timeline-content paragraph-text">&#8220;Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Nulla culpa optio ipsum reprehenderit, eius perferendis quae nemo fugiat ad vitae neque
+									veritatis voluptas dolorem a! Sed consectetur consequatur nihil repudiandae!&#8221;<br>
+									<strong>SoneOne, FOUNDER &amp; MANAGING DIRECTOR</strong>
+								</span>
+							</li>
+
+
+							<li class="year">2013</li>
+							<li class="upper-line">
+								<span class="title">tatata</span>
+								<span class="paragraph-text timeline-content">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eveniet alias laboriosam reiciendis,
+									nisi, earum delectus natus deleniti accusantium amet at magni fugit, explicabo ab. Asperiores velit ab
+									eaque quia.
+								</span>
+							</li>
+
+							<li class="year">2014</li>
+							<li class="upper-line">
+								<span class="title">pif paf pouf
+								</span>
+								<span class="timeline-content">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iusto maxime ex recusandae magni
+									corporis alias tenetur minus quia explicabo neque fugiat ab debitis, necessitatibus itaque voluptas
+									saepe optio dicta.
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="stastistical-part" id="stastistical-part">
+				<!-- section-seperator -->
+				<div class="section-seperator">
+					<div class="container-template">
+						<h2>
+							<span class="seconday">Nos</span>
+							Espaces de travail
+						</h2>
+					</div>
+				</div>
+
+				<!-- Content -->
+				<div class="content">
+					<div class="container-template">
+
+						<div class="intro container-template">
+							<p>L’espace de coworking Worker & Co
+								est un lieu qui propose la location
+								de bureaux au mois, à la journée
+								ou à l’heure avec une offre de services.
+								La communauté de coworkers
+								partagent des espaces communs,
+								et dispose de bureaux ouverts ou privés.</p>
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+
+			<!-- TESTIMONIALS SECTION -->
+
+			<section class="testimonials-part" id="testimonials-part">
+				<!-- section-seperator -->
+				<div class="testimonials-part-section-seperator">
+					<div class="container-template">
+						<h2>
+							<span class="seconday">Proposition</span>
+							image de lieux
+						</h2>
+
+						<div class="testimonials-container">
+							<ul class="testimonials testimonials-wrapper">
+
+								<li class="testimonials-slide">
+									<span class="testimonial-text">I am in love with the home designs. They are what i've been looking for
+										a long time! I am in love with the home designs. They are what i've been looking for a long
+										time!</span>
+									<span class="testimonial-author">Marseille</span>
+								</li>
+
+
+								<li class="testimonials-slide">
+									<span class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias
+										dolores iste officiis nesciunt dolorem maiores repellat quia! Maiores dolore sint quia veritatis
+										necessitatibus provident cumque adipisci ducimus accusamus corporis?</span>
+									<span class="testimonial-author">Bordeaux</span>
+								</li>
+
+
+								<li class="testimonials-slide">
+									<span class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+										explicabo corporis error dolores, autem maiores magnam quos pariatur, voluptatem vero enim vitae
+										tenetur eaque. Pariatur alias explicabo atque cum? Error.</span>
+									<span class="testimonial-author">Lille</span>
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="testimonials-pagination"></div>
+					</div>
+				</div>
+
+			</section>
+
+			<!-- PRICING -->
+
+			<section class="pricing-part" id="pricing-part">
+
+				<div class="content">
+					<div class="container-template">
+						<div class="headergroup"></div>
+					</div>
+				</div>
+
+				<!-- section-seperator -->
+				<div class="section-seperator">
+					<div class="container-template">
+						<h2>
+							<span class="seconday">Nos</span>
+							Tarifs
+						</h2>
+					</div>
+				</div>
+
+				<!-- Content -->
+				<div class="content">
+					<div class="container-template">
+
+
+						<!-- Menu -->
+						<ul class="pricing-menu">
+
+							<li class="selected"><a href="#">On Sale</a></li>
+							<li><a href="#">Recently Sold</a></li>
+							<li><a href="#">For Rent</a></li>
+
+						</ul>
+
+						<!-- L/R Nav -->
+						<a href="#" class="pricing-nav pricing-nav-prev"><i class="fa fa-angle-left"></i></a>
+						<a href="#" class="pricing-nav pricing-nav-next"><i class="fa fa-angle-right"></i></a>
+
+						<!-- Slides -->
+						<div class="pricing-container">
+							<div class="pricing-wrapper">
+
+
+								<div class="pricing-slide">
+									<div class="headergroup">
+										<h3>
+											<span>Sale</span>
+											<span class="seconday">Annual Cost</span>
+											<span class="super-seconday">$587,000</span>
+										</h3>
+									</div>
+
+									<div class="pricing-slide-content content-template">
+										<p>Our Diamond Membership Package</p>
+										<ul>
+											<li class="pricing-slide-text"> <i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+
+										</ul>
+										<p>&nbsp;</p>
+									</div>
+								</div>
+
+
+								<div class="pricing-slide">
+									<div class="headergroup">
+										<h3>
+											<span>Sold</span>
+											<span class="seconday">Annual Cost</span>
+											<span class="super-seconday">$358,000</span>
+										</h3>
+									</div>
+
+									<div class="pricing-slide-content content-template">
+										<p>Our premium Membership Package</p>
+										<ul>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+
+										</ul>
+										<p>&nbsp;</p>
+									</div>
+								</div>
+
+
+								<div class="pricing-slide">
+									<div class="headergroup">
+										<h3>
+											<span>Rent</span>
+											<span class="seconday">Annual Cost</span>
+											<span class="super-seconday">$18,000</span>
+										</h3>
+									</div>
+
+									<div class="pricing-slide-content content-template">
+										<p>Our great Membership Package</p>
+										<ul>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+											<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<!-- Important Tips -->
+
+
+			<section class="tips-part" id="tips-part">
+
+
+
+				<div class="section-seperator">
+					<div class="container-template">
+						<h2>
+							<span class="seconday">Comment</span>
+							Réserver
+						</h2>
+					</div>
+				</div>
+
+
+
+				<!-- Content -->
+				<div class="content">
+					<div class="container-template">
+
+						<div class="content-template">
+							<ul>
+								<li>
+									<i class="icon-task-check"></i> Your listing will be included in the Luxury directory area (coming
+									soon!)
+								</li>
+								<li>
+									<i class="icon-task-check"></i> This listing will include your company logo, company description and
+									contact details
+								</li>
+								<li>
+									<i class="icon-task-check"></i> Payment can be made online via Stripe.
+								</li>
+								<li>
+									<i class="icon-task-check"></i> Inclusion in the our social media activity plus followed and liked by
+									Luxury
+								</li>
+								<li>
+									<i class="icon-task-check"></i> Inclusion in the member’s only Luxury online directory
+								</li>
+								<li>
+									<i class="icon-task-check"></i> A Luxury logo will be provided for you to feature this on your
+									website.
+								</li>
+							</ul>
+						</div>
+						<br />
+						<button type="button" class="form-btn semibold">Space booking Form</button>
+
+					</div>
+				</div>
+
+			</section>
+
+
+			<!-- EVENTS CALENDAR SECTION-->
+
+			<section class="events-part" id="events-part">
+
+
+				<!-- section-seperator -->
+				<div class="section-seperator">
+					<div class="container-template">
+						<h2>
+							<span class="seconday">A venir</span>
+							Evenement
+						</h2>
+					</div>
+				</div>
+
+				<!-- Content -->
+				<div class="content">
+					<div class="container-template">
+						<!-- Events List -->
+						<ul class="events-list">
+							<li class="event-titles">
+								<div class="event-title">Evenements</div>
+								<div class="event-title">Date</div>
+								<div class="event-title">Location</div>
+							</li>
+
+							<li>
+								<div class="event-text">
+									<div class="event-details content-template">
+										<h4 class="event-title">Anniversaire</h4>
+
+										<div class="event-date">
+											08/09/2021 </div>
+										<div class="event-location">
+											Marseille </div>
+									</div>
+
+									<div class="event-description content-template"> Lorem ipsum dolor sit amet consectetur adipisicing
+										elit. Adipisci, nulla. Doloremque quasi iusto repudiandae dicta saepe cupiditate quis autem ullam
+										quam facere cum esse debitis temporibus totam, eos, provident inventore.</div>
+								</div>
+
+								<div class="event-image">
+									<img src="img/anniv.jpeg" alt="your text" />
+								</div>
+							</li>
+
+
+							<li>
+								<div class="event-text">
+									<div class="event-details content-template">
+										<h4 class="event-title">Remise de prix</h4>
+
+										<div class="event-date">
+											29/05/2021
+										</div>
+
+										<div class="event-location">
+											Lille
+										</div>
+									</div>
+
+									<div class="event-description content-template">Lorem ipsum dolor sit amet consectetur, adipisicing
+										elit. Quasi asperiores quis obcaecati eum maiores saepe, consectetur aperiam quod enim laborum?
+										Ducimus ullam obcaecati nisi numquam suscipit aliquam autem, sequi voluptates!
+									</div>
+								</div>
+
+								<div class="event-image">
+									<img src="img/remiseprix.png" alt="your text" />
+								</div>
+							</li>
+
+							<li>
+								<div class="event-text">
+									<div class="event-details content-template">
+										<h4 class="event-title">Depart en retraite</h4>
+
+										<div class="event-date">
+											29/05/2021
+										</div>
+
+										<div class="event-location">
+											Bordeaux
+										</div>
+									</div>
+
+									<div class="event-description content-template">Lorem ipsum dolor, sit amet consectetur adipisicing
+										elit. Placeat ex dolorem quis perspiciatis ipsam voluptate a exercitationem fuga eaque, magni
+										doloremque voluptatibus cupiditate deserunt aliquid? Temporibus atque nobis ex pariatur.
+									</div>
+								</div>
+
+								<div class="event-image">
+									<img src="img/retraite.png" alt="your text" />
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- FOUNDERS & TEAM SECTION-->
+
+			<section class="section-team" id="section-team">
+
+				<div class="section-seperator">
+					<div class="container-template">
+						<h2>
+							<span class="seconday">Nos</span>
+							Fondatrices
+						</h2>
+					</div>
+				</div>
+
+				<!-- Content -->
+				<div class="content">
+					<div class="container-template">
+
+
+
+						<!-- Team Members List -->
+						<ul class="team-members">
+
+							<li>
+								<div class="team-member-image">
+									<img src="img/team/2.jpg" alt="yours alone" />
+								</div>
+
+								<h3 class="team-member-title">
+									<span class="seconday">Jihane</span>
+								</h3>
+
+								<div class="team-member-text content-template">
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quae et quisquam voluptatum? Magni
+										quae alias dicta id dolore aliquam. Laboriosam quo aspernatur quisquam debitis possimus, magni iste
+										enim corrupti?</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="team-member-image">
+									<img src="img/team/2.jpg" alt="yours alone" />
+								</div>
+
+								<h3 class="team-member-title">
+									<span class="seconday">Saadia</span>
+								</h3>
+
+								<div class="team-member-text content-template">
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quae et quisquam voluptatum? Magni
+										quae alias dicta id dolore aliquam. Laboriosam quo aspernatur quisquam debitis possimus, magni iste
+										enim corrupti?</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="team-member-image">
+									<img src="img/team/2.jpg" alt="yours alone" />
+								</div>
+
+								<h3 class="team-member-title">
+									<span class="seconday">Sonia</span>
+								</h3>
+
+								<div class="team-member-text content-template">
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quae et quisquam voluptatum? Magni
+										quae alias dicta id dolore aliquam. Laboriosam quo aspernatur quisquam debitis possimus, magni iste
+										enim corrupti?</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="contact-form" id="contact-form">
+
+				<div class="headergroup">
+					<h2>
+						<span class="seconday">Contact</span>
+						<span>Contactez nous</span>
+					</h2>
+				</div>
+
+				<div class="container">
+					<div class="inner contact">
+						<!-- Form Area -->
+						<div class="contact-form">
+							<!-- Form -->
+							<br />
+							<form id="contact-us" method="post" action="contact.php">
+								<!-- Left Inputs -->
+								<div class="col-xs-6 ">
+									<!-- Name -->
+									<br>
+									<input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+									<!-- Email -->
+									<input type="email" name="email" id="email" required="required" class="form" placeholder="Email" />
+									<!-- secondayject -->
+									<input type="text" name="secondayject" id="secondayject" required="required" class="form"
+										placeholder="secondayject" />
+								</div><!-- End Left Inputs -->
+								<!-- Right Inputs -->
+								<div class="col-xs-6">
+									<!-- Message -->
+									<br>
+									<textarea name="message" id="message" class="form textarea" placeholder="Message"></textarea>
+								</div><!-- End Right Inputs -->
+								<!-- Bottom secondaymit -->
+								<div class="relative fullwidth col-xs-12">
+									<!-- Send Button -->
+									<button type="submit" id="secondaymit" name="secondaymit" class="form-btn semibold">Send
+										Message</button>
+								</div><!-- End Bottom secondaymit -->
+								<!-- Clear -->
+								<div class="clear"></div>
+							</form>
+
+							<!-- Your Mail Message -->
+							<div class="mail-message-area">
+								<!-- Message -->
+								<div class="alert gray-bg mail-message not-visible-message">
+									<strong>Merci !</strong> Votre mail à été envoyé
+								</div>
+							</div>
+						</div>
+					</div><!-- End Contact Form Area -->
+				</div><!-- End Inner -->
+
+				<br />
+
+			</section>
+
+
+		</main>
+
+	</div>
+	<script type='text/javascript' src='js/jquery.js'></script>
+	<script type='text/javascript' src='js/jquery-migrate.js'></script>
+	<script type='text/javascript' src='js/jquery.form.js'></script>
+	<script type='text/javascript' src='js/jquery.mobile.custom.js'></script>
+	<script type='text/javascript' src='js/modernizr.js'></script>
+	<script type='text/javascript' src='js/response.js'></script>
+	<script type='text/javascript' src='js/swiper.js'></script>
+	<script type='text/javascript' src='js/waypoints.js'></script>
+	<script type='text/javascript' src='js/jquery.stellar.js'></script>
+	<script type='text/javascript' src='js/module.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+</body>
+
 </html>
