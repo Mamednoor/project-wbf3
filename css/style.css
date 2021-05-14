@@ -1136,6 +1136,7 @@ main {
 
 .size-24{
   font-size: 28px !important;
+  margin-left: 15px;
 }
 .size{
   margin-top: 4px;
@@ -1147,6 +1148,7 @@ margin-left: 15px;
 }
 .size-34{
   margin-top: 10px;
+  margin-left: 15px;
  font-size: 28px !important; 
 }
 .icons-menu-bottom{
@@ -2377,7 +2379,7 @@ margin-left: 15px;
 
 
 .testimonials-part .testimonials-part-section-seperator{
-            background-image: url(../images/clients.jpg);
+            background-image: url(../img/place1.jpeg);
           }
 
 .testimonials-part .testimonials-part-section-seperator {
