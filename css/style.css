@@ -75,10 +75,6 @@ main {
   display: block;
 }
 
-/* img {
-  display: block;
-} */
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -848,10 +844,6 @@ input[type="secondaymit"]:active {
 
 html, body {
   min-height: 100%;
-}
-
-html {
-  background-color: #262B2D !important;
 }
 
 body {
@@ -1982,6 +1974,7 @@ margin-left: 15px;
   width: 2px;
   height: 100%;
   background: #3a3e3f;
+  
 }
 .timeline-part .timeline li:last-child:before {
   -webkit-transform: translateY(-100%);
@@ -2199,12 +2192,14 @@ margin-left: 15px;
 /* Sections */
 /* Intro */
 .section-intro {
-  background-image: url(../img/homeImg.jpeg);
+  /* background-image: url(../img/homeImg.jpeg); */
   position: relative;
   width: 100%;
   height: 12.5em;
   text-align: center;
 }
+
+
 .section-intro .content .container-template {
   width: 100%;
   max-width: 100%;
@@ -2251,7 +2246,9 @@ margin-left: 15px;
 }
 @media screen and (min-width: 750px) {
   .section-intro {
+    /* height: 17.1875em; */
     height: 17.1875em;
+    margin-bottom: 9em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2414,12 +2411,12 @@ margin-left: 15px;
     height: 31.25em;
   }
   .testimonials-part .testimonials-part-section-seperator h2 {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
   }
 }
 @media screen and (min-width: 1200px) {
   .testimonials-part .testimonials-part-section-seperator {
-    height: 41.5em;
+    height: 30.5em;
   }
   .testimonials-part .testimonials-part-section-seperator .container-template {
     width: 45%;
@@ -2447,7 +2444,7 @@ margin-left: 15px;
 .testimonials-part .testimonials li .testimonial-text {
     display: block;
     margin-bottom: 0.5em;
-    font-size: 1.4em;
+    font-size: 1em;
     color: #FFF;
     line-height: 26px;
 
@@ -2640,7 +2637,7 @@ margin-left: 15px;
 /* Pricing */
 @media (min-width: 1020px) {
   .pricing-container {
-    height: 500px;
+    height: 350px;
   }
 }
 .pricing-part .section-seperator{
@@ -2654,7 +2651,7 @@ margin-left: 15px;
   display: none;
   width: 100%;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 1.5em;
   text-transform: uppercase;
   font-size: 1.125em;
@@ -2831,7 +2828,7 @@ section#tips-part {
   z-index: -1;
   width: 100%;
   text-align: center;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Robotto', serif;
   font-size: 3em;
   color: #313638;
 }
@@ -2997,15 +2994,19 @@ section#tips-part {
 .section-team .content {
   padding-top: 0;
 }
+
 .section-team .team-members {
   max-width: 59.375em;
   margin: 2em auto 0;
   text-align: center;
 }
+
+
+
 .section-team .team-members li {
   display: inline-block;
   width: 100%;
-  margin-bottom: 2em;
+  margin: 2em;
   text-align: center;
 }
 .section-team .team-members li .team-member-image {
@@ -3024,12 +3025,9 @@ section#tips-part {
 .section-team .team-members li .team-member-text p {
   color: white;
 }
-@media screen and (min-width: 750px) {
-  .section-team .team-members li {
-    width: 50%;
-    padding: 0 2em;
-  }
-}
+
+
+
 /******Contact******/
 
 /*Contact */
@@ -3165,4 +3163,8 @@ section#tips-part {
 
   .form-btn:active{
     opacity: 0.9;
+  }
+
+  .carousel-part .carousel .carousel-inner img {
+    height: 490px;
   }
