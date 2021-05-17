@@ -75,10 +75,6 @@ main {
   display: block;
 }
 
-/* img {
-  display: block;
-} */
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -848,10 +844,6 @@ input[type="secondaymit"]:active {
 
 html, body {
   min-height: 100%;
-}
-
-html {
-  background-color: #262B2D !important;
 }
 
 body {
@@ -2414,12 +2406,12 @@ margin-left: 15px;
     height: 31.25em;
   }
   .testimonials-part .testimonials-part-section-seperator h2 {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
   }
 }
 @media screen and (min-width: 1200px) {
   .testimonials-part .testimonials-part-section-seperator {
-    height: 41.5em;
+    height: 30.5em;
   }
   .testimonials-part .testimonials-part-section-seperator .container-template {
     width: 45%;
@@ -2447,7 +2439,7 @@ margin-left: 15px;
 .testimonials-part .testimonials li .testimonial-text {
     display: block;
     margin-bottom: 0.5em;
-    font-size: 1.4em;
+    font-size: 1em;
     color: #FFF;
     line-height: 26px;
 
@@ -2654,7 +2646,7 @@ margin-left: 15px;
   display: none;
   width: 100%;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 1.5em;
   text-transform: uppercase;
   font-size: 1.125em;
@@ -3165,4 +3157,8 @@ section#tips-part {
 
   .form-btn:active{
     opacity: 0.9;
+  }
+
+  .carousel-part .carousel .carousel-inner img {
+    height: 490px;
   }

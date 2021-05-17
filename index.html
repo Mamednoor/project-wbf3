@@ -11,7 +11,10 @@
 	<meta name="msapplication-TileColor" content="#FFFFFF" />
 	<link rel="icon" href="img/logo.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"  crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 	<link rel="stylesheet" href="css/picto-foundry-emotions.css" />
 	<link rel="stylesheet" href="css/picto-foundry-household.css" />
@@ -165,7 +168,7 @@
 					<div class="container-template">
 						<h2>
 							<span class="seconday">Nos</span>
-							Espaces de travail
+							Espaces
 						</h2>
 					</div>
 				</div>
@@ -196,7 +199,7 @@
 				<div class="testimonials-part-section-seperator">
 					<div class="container-template">
 						<h2>
-							<span class="seconday">Proposition</span>
+							<span class="secondary">Proposition</span>
 							image de lieux
 						</h2>
 
@@ -213,16 +216,14 @@
 
 								<li class="testimonials-slide">
 									<span class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias
-										dolores iste officiis nesciunt dolorem maiores repellat quia! Maiores dolore sint quia veritatis
-										necessitatibus provident cumque adipisci ducimus accusamus corporis?</span>
+										dolores iste officiis nesciunt dolorem maiores repellat quia!</span>
 									<span class="testimonial-author">Bordeaux</span>
 								</li>
 
 
 								<li class="testimonials-slide">
 									<span class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-										explicabo corporis error dolores, autem maiores magnam quos pariatur, voluptatem vero enim vitae
-										tenetur eaque. Pariatur alias explicabo atque cum? Error.</span>
+										explicabo corporis error dolores.</span>
 									<span class="testimonial-author">Lille</span>
 								</li>
 
@@ -238,18 +239,31 @@
 
 			<!---->
 
-			<section class="stastistical-part" id="stastistical-part">
+			<section class="carousel-part" id="carousel-part">
 				<!-- section-seperator -->
 
 				<!-- Content -->
 				<div class="content">
 					<div class="container-template">
 
-						<div class="intro container-template">
+						<!-- <div class="intro container-template">
 							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis ab reiciendis mollitia sequi voluptatum repellat modi corrupti repellendus consectetur! Natus at, nam ab quos iste ipsa deleniti asperiores impedit harum!</p>
-						</div>
+					</div> -->
 
+					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+									<img src="img/anniv.jpeg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="img/event.png" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="img/contactImg.jpeg" class="d-block w-100" alt="...">
+							</div>
+						</div>
 					</div>
+
 				</div>
 
 			</section>
@@ -272,7 +286,6 @@
 				<div class="content">
 					<div class="container-template">
 
-
 						<!-- Menu -->
 						<ul class="pricing-menu">
 							<li class="selected"><a href="#">Journée</a></li>
@@ -288,12 +301,11 @@
 						<div class="pricing-container">
 							<div class="pricing-wrapper">
 
-
 								<div class="pricing-slide">
 									<div class="headergroup">
 										<h3>
 											<span>Journée</span>
-											<span class="seconday">testimonial à la journée</span>
+											<span class="seconday">à la journée</span>
 											<span class="super-seconday">200€</span>
 										</h3>
 									</div>
@@ -307,7 +319,7 @@
 									<div class="headergroup">
 										<h3>
 											<span>Mensuel</span>
-											<span class="seconday">testimonial au mois</span>
+											<span class="seconday">au mois</span>
 											<span class="super-seconday">2000€</span>
 										</h3>
 									</div>
@@ -321,7 +333,7 @@
 									<div class="headergroup">
 										<h3>
 											<span>Annuel</span>
-											<span class="seconday">testimonial à l'année</span>
+											<span class="seconday">à l'année</span>
 											<span class="super-seconday">25000€</span>
 										</h3>
 									</div>
@@ -361,7 +373,7 @@
 									<i class="icon-task-check"></i> Renseigner le nombre de personnes ainsi que leur coordonées
 								</li>
 								<li>
-									<i class="icon-task-check"></i> Caution par virement dès la testimonial. Annulation 48H à l'avance
+									<i class="icon-task-check"></i> Caution par virement par virement dès la réservation. Annulation 48H à l'avance
 								</li>
 								<li>
 									<i class="icon-task-check"></i> Les repas sont inclus dans le prix (Petit déjeuné, Déjeuné, "Dinner
@@ -630,7 +642,9 @@
 	<script type='text/javascript' src='js/waypoints.js'></script>
 	<script type='text/javascript' src='js/jquery.stellar.js'></script>
 	<script type='text/javascript' src='js/module.js'></script>
-	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+	<!-- <script type='text/javascript' src='js/bootstrap.min.js'></script> -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
