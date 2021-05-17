@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Worker & Co</title>
+  <link rel="icon" href="img/logo.png" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css"
+    crossorigin="anonymous" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section style="display: flex; justify-content: center;" data-stellar-background-ratio="0.5"
+    data-stellar-vertical-offset="0">
+
+    <div class="container-template">
+
+      <div class="headergroup">
+        <h2 style="display: flex; flex-direction: column;">
+          <div>
+            <img src="img/logo3.png" alt="">
+          </div>
+          <div class="headergroup"></div>
+          <div style="margin-top: 50px;">
+            <span>Réservation</span>
+          </div>
+        </h2>
+      </div>
+
+      <div class="container">
+        <div class="inner contact">
+          <div class="contact-form">
+            <br />
+            <form id="reservation" method="post">
+              <div class="col-xs-6 ">
+
+                <select class="form" title="title" required="required">
+                  <option value="">--Choisissez la ville--</option>
+                  <option value="Paris">Paris</option>
+                  <option value="Marseille">Marseille</option>
+                  <option value="Bordeaux">Bordeaux</option>
+                  <option value="Lille">Lille</option>
+                  <option value="Perpignan">Perpignan</option>
+                  <option value="Brest">Brest</option>
+                  <option value="Lyon">Lyon</option>
+                  <option value="Roubaix">Roubaix</option>
+                  <option value="La Défense">La Défense</option>
+                  <option value="Strasbourg">Strasbourg</option>
+                </select>
+
+                <input type="text" name="name" id="name" class="form" placeholder="Nom de la société ou de l'entité" />
+                <input type="text" name="name" id="lastname" required="required" class="form" placeholder="Nom" />
+                <input type="text" name="name" id="firstname" required="required" class="form" placeholder="Prénom" />
+                <input type="email" name="email" id="email" required="required" class="form" placeholder="Email" />
+
+                <select class="form" title="title">
+                  <option value="">--Choisissez le type de paiement--</option>
+                  <option value="CB">Carte bancaire</option>
+                  <option value="Virement">Virement</option>
+                </select>
+                                
+                <select class="form" title="title">
+                  <option value="">--Choisissez la salle--</option>
+                  <option value="Alexendrie">Salle Alexendrie</option>
+                  <option value="Mozart">Salle Mozart</option>
+                  <option value="Ginguette">Salle de la Ginguette</option>
+                  <option value="Victoire">Salle de la Victoire</option>
+                  <option value="Virtuosité">Salle de la Virtuosité</option>
+                  <option value="Brest">Salle de l'Espoir</option>
+                  <option value="Salle">Salle de la Salle</option>
+                  <option value="Bain">Salle de Bain</option>
+                  <option value="Bergerac">Salle Cyrano de Bergerac</option>
+                  <option value="Royal">Salle Royal</option>
+                </select>
+
+                <textarea name="message" id="message" class="form textarea" placeholder="Merci de nous communiquer toute informations que vous trouverez nécessaire, afin de faciliter votre réservation"></textarea>
+                
+              </div>
+
+              <div class=" row col-xs-12">
+                <button onclick="window.location.href = 'index.html' " type="button"
+                class="form-btn semibold">Retour</button>
+                <button type="submit" id="secondaymit" name="secondaymit" class="form-btn semibold">Réserver</button>
+              </div>
+              <div class="clear"></div>
+            </form>
+            <div class="mail-message-area">
+              <div class="alert gray-bg mail-message not-visible-message">
+                <strong>Merci !</strong> Votre mail à été envoyé
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script type="text/javascript" src="js/video.js" async defer></script>
+</body>
+
+</html>

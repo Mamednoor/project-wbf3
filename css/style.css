@@ -3168,3 +3168,10 @@ section#tips-part {
   .carousel-part .carousel .carousel-inner img {
     height: 490px;
   }
+  
+  .visible {
+    visibility: visible !important;
+  }
+  .invisible {
+    visibility: hidden !important;
+  }

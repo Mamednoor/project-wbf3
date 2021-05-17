@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Worker & Co</title>
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section
+      style="display: flex; justify-content: center"
+      data-stellar-background-ratio="0.5"
+      data-stellar-vertical-offset="0"
+    >
+      <div class="container-template">
+        <div class="headergroup">
+          <h2 style="display: flex; flex-direction: column">
+            <div>
+              <img src="img/logo3.png" alt="" />
+            </div>
+            <div class="headergroup"></div>
+            <div style="margin-top: 50px">
+              <span>Connexion</span>
+            </div>
+          </h2>
+        </div>
+
+        <div class="container">
+          <div class="inner contact">
+            <div class="contact-form">
+              <div>
+                <button
+                  type="button"
+                  id="secondaymit"
+                  name="secondaymit"
+                  class="form-btn semibold"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  aria-controls="login"
+                  href="#login"
+                >
+                  Connexion
+                </button>
+                <br />
+                <button
+                  type="button"
+                  id="secondaymit"
+                  name="secondaymit"
+                  class="form-btn semibold"
+                  data-toggle="collapse"
+                  data-target="#register"
+                  aria-expanded="false"
+                  aria-controls="register"
+                  href="#register"
+                >
+                  Créer un compte
+                </button>
+                <br />
+              </div>
+
+              <form id="login" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required="required"
+                  class="form"
+                  placeholder="Mail"
+                />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required="required"
+                  class="form"
+                  placeholder="Mot de passe"
+                />
+                <!-- 
+                  <p class="message">Pas enregistré ? <a onclick="toggleForm()"> Créer un compte</a></p> -->
+                <div style="display: flex; justify-content: center">
+                  <button
+                    type="submit"
+                    id="secondaymit"
+                    name="secondaymit"
+                    class="form-btn semibold"
+                  >
+                    Valider
+                  </button>
+
+                  <button
+                    type="button"
+                    onclick="window.location.href='index.html'"
+                    id="secondaymit"
+                    name="secondaymit"
+                    class="form-btn semibold"
+                  >
+                    Retour
+                  </button>
+                </div>
+                <br />
+              </form>
+
+              <form id="register" method="post">
+                <input
+                  type="firstname"
+                  name="firstname"
+                  id="firstname"
+                  required="required"
+                  class="form"
+                  placeholder="Prénom"
+                />
+                <input
+                  type="lastname"
+                  name="lastname"
+                  id="lastname"
+                  required="required"
+                  class="form"
+                  placeholder="Nom"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required="required"
+                  class="form"
+                  placeholder="Mail"
+                />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required="required"
+                  class="form"
+                  placeholder="Mot de passe"
+                />
+
+                <!-- <p class="message">Déjà enregistré ? <a onclick="toggleForm()"> Connectez-vous</a></p> -->
+                <div style="display: flex; justify-content: center">
+                  <button
+                    type="submit"
+                    id="secondaymit"
+                    name="secondaymit"
+                    class="form-btn semibold"
+                  >
+                    Enregistrer
+                  </button>
+
+                  <button
+                    type="button"
+                    onclick="window.location.href='index.html'"
+                    id="secondaymit"
+                    name="secondaymit"
+                    class="form-btn semibold"
+                  >
+                    Retour
+                  </button>
+                </div>
+
+                <br />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script async defer>
+      function toggleForm() {
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
