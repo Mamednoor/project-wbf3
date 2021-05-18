@@ -36,7 +36,7 @@
             </div>
             <div class="headergroup"></div>
             <div style="margin-top: 50px">
-              <span>Authentifiez-vous</span>
+              <span>Enregistrez-vous</span>
             </div>
           </h2>
         </div>
@@ -45,7 +45,24 @@
           <div class="inner contact">
             <div class="contact-form">
 
-              <form id="login" method="post">
+
+              <form id="register" method="post">
+                <input
+                  type="firstname"
+                  name="firstname"
+                  id="firstname"
+                  required="required"
+                  class="form"
+                  placeholder="Prénom"
+                />
+                <input
+                  type="lastname"
+                  name="lastname"
+                  id="lastname"
+                  required="required"
+                  class="form"
+                  placeholder="Nom"
+                />
                 <input
                   type="email"
                   name="email"
@@ -62,8 +79,8 @@
                   class="form"
                   placeholder="Mot de passe"
                 />
-                
-                  <p class="message">Pas enregistré ? <a onclick="window.location.href='register.html'"> Créer un compte</a></p>
+
+                <p class="message">Déjà enregistré ? <a onclick="window.location.href='login.html'"> Connectez-vous</a></p>
                 <div style="display: flex; justify-content: center">
                   <button
                     type="submit"
@@ -71,7 +88,7 @@
                     name="secondaymit"
                     class="form-btn semibold"
                   >
-                    Valider
+                    Enregistrer
                   </button>
 
                   <button
@@ -84,9 +101,9 @@
                     Retour
                   </button>
                 </div>
+
                 <br />
               </form>
-
             </div>
           </div>
         </div>
