@@ -3166,6 +3166,8 @@ section#tips-part {
   }
 
   .carousel-part .carousel .carousel-inner img {
+    display: flex;
+    justify-content: center;
     width: auto;
     height: 450px;
   }
