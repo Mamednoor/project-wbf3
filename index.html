@@ -133,7 +133,7 @@
                 <video id="video" muted autoplay loop width="80%">
                   <source src="videos/video.mp4" type="video/mp4" />
                 </video>
-                <audio muted autoplay src="audio/audio2.mp3"></audio>
+                <audio id="audio" autoplay src="audio/audio2.mp3" type="audio/mpeg"></audio>
               </div>
             </div>
           </div>
@@ -213,8 +213,8 @@
                   des espaces communs, et dispose de bureaux ouverts ou privés.
                 </p>
                 <div>
-                  <video id="video" muted autoplay loop width="40%">
-                    <source src="videos/testmp4.mp4" type="video/mp4" />
+                  <video autoplay loop width="40%">
+                    <source src="videos/map.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -769,6 +769,10 @@
 
       </main>
     </div>
+    <script type="text/javascript">
+      var monElementAudio = document.getElementById("audio");
+      monElementAudio.volume = 0.009;
+    </script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-migrate.js"></script>
     <script type="text/javascript" src="js/jquery.form.js"></script>
@@ -791,6 +795,6 @@
     <script>
       new WOW().init();
     </script>
-    <script type="text/javascript" src="js/video.js" async defer></script>
+
   </body>
 </html>
