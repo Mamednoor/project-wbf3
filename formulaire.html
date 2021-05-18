@@ -19,11 +19,10 @@
 </head>
 
 <body>
-  <section style="display: flex; justify-content: center;" data-stellar-background-ratio="0.5"
+  <div style="display: flex; justify-content: center;" data-stellar-background-ratio="0.5"
     data-stellar-vertical-offset="0">
 
     <div class="container-template">
-
       <div class="headergroup">
         <h2 style="display: flex; flex-direction: column;">
           <div>
@@ -83,7 +82,6 @@
                 </select>
 
                 <textarea name="message" id="message" class="form textarea" placeholder="Merci de nous communiquer toute informations que vous trouverez nécessaire, afin de faciliter votre réservation"></textarea>
-                
               </div>
 
               <div class=" row col-xs-12">
@@ -91,21 +89,26 @@
                 class="form-btn semibold">Retour</button>
                 <button type="submit" id="secondaymit" name="secondaymit" class="form-btn semibold">Réserver</button>
               </div>
+
               <div class="clear"></div>
             </form>
+
             <div class="mail-message-area">
               <div class="alert gray-bg mail-message not-visible-message">
                 <strong>Merci !</strong> Votre mail à été envoyé
               </div>
             </div>
+
           </div>
         </div>
       </div>
 
-      <br />
+  </div>
 
-  </section>
-
+  <script type="text/javascript">
+    var monElementAudio = document.getElementById("audio");
+    monElementAudio.volume = 0.009;
+  </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
@@ -115,5 +118,4 @@
   </script>
   <script type="text/javascript" src="js/video.js" async defer></script>
 </body>
-
 </html>
