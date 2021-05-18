@@ -3002,8 +3002,6 @@ section#tips-part {
   text-align: center;
 }
 
-
-
 .section-team .team-members li {
   display: inline-block;
   width: 100%;
@@ -3028,13 +3026,7 @@ section#tips-part {
 }
 
 
-
-/******Contact******/
-
 /*Contact */
-
-
-
   #contact{
     padding:10px 0 10px;
   }
@@ -3173,6 +3165,9 @@ section#tips-part {
     height: 450px;
   }
   
+  .section-footer {
+    padding: 10px;
+  }
 
   .section-footer .container .social-icons {
     display:flex;
